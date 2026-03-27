@@ -1,1 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hanyue Du</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      background:#ececec;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#111;
+    }
+    .container{
+      width:1000px;
+      margin:30px auto 60px auto;
+    }
+    .section-title{
+      font-size:24px;
+      font-weight:700;
+      margin:28px 0 10px 0;
+    }
+    .box{
+      background:#fff;
+      border:1px solid #d8d8d8;
+      padding:16px 18px;
+      box-sizing:border-box;
+    }
+    .header-box{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .header-left{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex:1;
+    }
+    .avatar{
+      width:120px;
+      height:160px;
+      object-fit:cover;
+      border:1px solid #ddd;
+      background:#f5f5f5;
+    }
+    .header-info h1{
+      margin:0 0 8px 0;
+      font-size:36px;
+      font-weight:500;
+    }
+    .header-info p{
+      margin:3px 0;
+      font-size:18px;
+      line-height:1.35;
+    }
+    .school-logo{
+      width:140px;
+      max-height:140px;
+      object-fit:contain;
+    }
+    .links a{
+      color:#1565c0;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .links a:hover{
+      text-decoration:underline;
+    }
+    .about-text{
+      font-size:18px;
+      line-height:1.45;
+    }
+    ul{
+      margin:10px 0 0 18px;
+      padding:0;
+      font-size:18px;
+      line-height:1.45;
+    }
+    li{ margin:6px 0; }
+    .pub-note{
+      font-size:16px;
+      margin-bottom:10px;
+    }
+    .pub-item{
+      display:flex;
+      gap:18px;
+      background:#fff;
+      border:1px solid #d8d8d8;
+      padding:16px;
+      margin-bottom:18px;
+      box-sizing:border-box;
+    }
+    .pub-thumb{
+      width:260px;
+      height:120px;
+      object-fit:cover;
+      border:1px solid #ddd;
+      background:#f5f5f5;
+      flex-shrink:0;
+    }
+    .pub-content{
+      flex:1;
+    }
+    .pub-title{
+      font-size:20px;
+      font-weight:700;
+      margin-bottom:4px;
+    }
+    .pub-authors{
+      font-size:17px;
+      margin-bottom:3px;
+    }
+    .pub-venue{
+      font-size:17px;
+      margin-bottom:8px;
+    }
+    .pub-links a{
+      color:#1565c0;
+      text-decoration:none;
+      margin-right:8px;
+      font-size:16px;
+    }
+    .pub-links a:hover{
+      text-decoration:underline;
+    }
+    .pub-desc{
+      color:#d7191c;
+      font-size:17px;
+      font-weight:700;
+      margin-top:8px;
+      line-height:1.3;
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+    .footer-map{
+      width:720px;
+      height:360px;
+      margin:20px auto 0 auto;
+      background:#2f80b7;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:28px;
+      font-weight:700;
+    }
+    .small{
+      font-size:16px;
+    }
+    .blue{
+      color:#1565c0;
+    }
+    @media (max-width: 1100px){
+      .container{
+        width:92%;
+      }
+      .pub-item{
+        flex-direction:column;
+      }
+      .pub-thumb{
+        width:100%;
+        height:200px;
+      }
+      .header-box{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .school-logo{
+        align-self:flex-end;
+      }
+      .footer-map{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
 
+    <!-- 顶部个人信息 -->
+    <div class="box header-box">
+      <div class="header-left">
+        <img class="avatar" src="assets/avatar.jpg" alt="avatar">
+        <div class="header-info">
+          <h1>Hanyue Du (杜含月)</h1>
+          <p>Ph.D. Student, School of Information Science and Engineering, Shandong University</p>
+          <p><b>Address:</b> Jinan, Shandong, China</p>
+          <p><b>Email:</b> duhanyue@mail.sdu.edu.cn</p>
+        </div>
+      </div>
+      <img class="school-logo" src="assets/logo.png" alt="logo">
+    </div>
+
+    <!-- About -->
+    <div class="section-title">
+      About Me
+      <span class="links">
+        [<a href="https://github.com/duhanyue349" target="_blank">GitHub</a>]
+        [<a href="#" target="_blank">Google Scholar</a>]
+        [<a href="#" target="_blank">CSDN</a>]
+      </span>
+    </div>
+    <div class="box about-text">
+      <p>
+        I am currently a Ph.D. student in Artificial Intelligence at Shandong University.
+        My research interests include <b>gait recognition</b>, <b>computer vision</b>,
+        <b>multimodal learning</b>, and <b>pattern recognition</b>.
+      </p>
+      <p>
+        My recent works mainly focus on:
+      </p>
+      <ul>
+        <li>Multimodal gait recognition</li>
+        <li>Cross-modal feature fusion</li>
+        <li>Robust recognition under clothing / occlusion variations</li>
+        <li>Computer vision and pattern recognition</li>
+      </ul>
+    </div>
+
+    <!-- Honor -->
+    <div class="section-title">Honor</div>
+    <div class="box">
+      <ul>
+        <li>National Scholarship / Academic Scholarship (replace with your own)</li>
+        <li>Outstanding Graduate Student (replace with your own)</li>
+        <li>Competition Awards / Research Awards (replace with your own)</li>
+      </ul>
+    </div>
+
+    <!-- News -->
+    <div class="section-title">News</div>
+    <div class="box">
+      <ul>
+        <li><b>2026-03:</b> 1 paper accepted by <span class="blue">IEEE Transactions on Information Forensics and Security (TIFS)</span>.</li>
+        <li><b>2025-XX:</b> Add your news here.</li>
+        <li><b>2024-XX:</b> Add your news here.</li>
+      </ul>
+    </div>
+
+    <!-- Publications -->
+    <div class="section-title">Publications</div>
+    <div class="pub-note">(* indicates equal contribution, # corresponding author)</div>
+
+    <div class="pub-item">
+      <img class="pub-thumb" src="assets/pub1.jpg" alt="paper1">
+      <div class="pub-content">
+        <div class="pub-title">SeeGait: Synergistic Co-evolving Representations for Multimodal Gait Recognition via Hierarchical Multi-Stage Fusion</div>
+        <div class="pub-authors"><b>Hanyue Du</b>, Xianye Ben, ...</div>
+        <div class="pub-venue">in IEEE Transactions on Information Forensics and Security, 2026</div>
+        <div class="pub-links">
+          <a href="#">[Paper]</a>
+          <a href="https://github.com/benxianyeteam/SeeGait" target="_blank">[Code]</a>
+          <a href="#">[BibTeX]</a>
+        </div>
+        <div class="pub-desc">
+          A hierarchical multi-stage multimodal gait recognition framework with synergistic co-evolving representations for robust recognition.
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <img class="pub-thumb" src="assets/pub2.jpg" alt="paper2">
+      <div class="pub-content">
+        <div class="pub-title">GaitADIB: Adversarial Disentangled Information Bottleneck Network for Unseen-View Gait Recognition</div>
+        <div class="pub-authors"><b>Hanyue Du</b>, ...</div>
+        <div class="pub-venue">Pattern Recognition / Under submission</div>
+        <div class="pub-links">
+          <a href="#">[Paper]</a>
+          <a href="#">[Code]</a>
+          <a href="#">[BibTeX]</a>
+        </div>
+        <div class="pub-desc">
+          A view-robust gait recognition framework based on information bottleneck and adversarial disentanglement.
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <img class="pub-thumb" src="assets/pub3.jpg" alt="paper3">
+      <div class="pub-content">
+        <div class="pub-title">Your Previous Paper Title 1</div>
+        <div class="pub-authors"><b>Hanyue Du</b>, ...</div>
+        <div class="pub-venue">Conference / Journal, Year</div>
+        <div class="pub-links">
+          <a href="#">[Paper]</a>
+          <a href="#">[Code]</a>
+          <a href="#">[BibTeX]</a>
+        </div>
+        <div class="pub-desc">
+          Replace this with a one- or two-sentence summary of the paper.
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <img class="pub-thumb" src="assets/pub4.jpg" alt="paper4">
+      <div class="pub-content">
+        <div class="pub-title">Your Previous Paper Title 2</div>
+        <div class="pub-authors"><b>Hanyue Du</b>, ...</div>
+        <div class="pub-venue">Conference / Journal, Year</div>
+        <div class="pub-links">
+          <a href="#">[Paper]</a>
+          <a href="#">[Code]</a>
+          <a href="#">[BibTeX]</a>
+        </div>
+        <div class="pub-desc">
+          Replace this with a one- or two-sentence summary of the paper.
+        </div>
+      </div>
+    </div>
+
+    <!-- Internships -->
+    <div class="section-title">Internships</div>
+    <div class="box">
+      <ul>
+        <li>202X.XX - present, Your internship / visiting experience.</li>
+      </ul>
+    </div>
+
+    <!-- Review Services -->
+    <div class="section-title">Review Services</div>
+    <div class="box">
+      <p><b>Journal Reviewer</b><br>
+        IEEE Transactions on Information Forensics and Security (example)
+      </p>
+      <p><b>Conference Reviewer</b><br>
+        CVPR / ICCV / ECCV / AAAI / ICPR (replace with your own)
+      </p>
+    </div>
+
+    <!-- Friendly Links -->
+    <div class="section-title">Friendly Links</div>
+    <div class="box">
+      <ul>
+        <li><a class="links" href="#">Advisor / Lab Website</a></li>
+        <li><a class="links" href="#">Cooperator 1</a></li>
+        <li><a class="links" href="#">Cooperator 2</a></li>
+      </ul>
+    </div>
+
+    <!-- map / footer -->
+    <div class="footer-map">
+      Visitor Map / Footer Area
+    </div>
+
+  </div>
+</body>
+</html>
